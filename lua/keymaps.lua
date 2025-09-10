@@ -12,3 +12,13 @@ vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 vim.keymap.set('n', '<leader>su', vim.pack.update)
+
+vim.keymap.set('n', '<leader>cu', 
+    function()
+        local plugins = {}
+        for _, plugin in ipairs(vim.pack.get()) do
+            table.insert(plugins, plugin.spec.name)
+        end
+        vim.pack.del(plugins)
+    end
+)
