@@ -19,6 +19,6 @@ local ts_ls_config = {
 vim.lsp.config('ts_ls', ts_ls_config)
 
 vim.lsp.enable('gopls')
-vim.lsp.enable('lua_ls')
+-- vim.lsp.enable('lua_ls')
 vim.lsp.enable('bashls')
 vim.lsp.enable({ 'ts_ls', 'vue_ls' })
