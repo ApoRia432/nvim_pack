@@ -23,7 +23,7 @@ vim.pack.add({
     -- lspconfig
     'https://github.com/neovim/nvim-lspconfig',
     -- Mason
-    'https://github.com/mason-org/mason.nvim',
+    --'https://github.com/mason-org/mason.nvim',
     -- autopair
     'https://github.com/windwp/nvim-autopairs',
     -- indent
