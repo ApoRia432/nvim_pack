@@ -1,9 +1,9 @@
 local plugins = {
-    -- blink.cmp
-    {
-        src = 'https://github.com/Saghen/blink.cmp',
-    },
-    'https://github.com/rafamadriz/friendly-snippets',
+	-- blink.cmp
+	{
+		src = 'https://github.com/Saghen/blink.cmp',
+	},
+	'https://github.com/rafamadriz/friendly-snippets',
     -- bufferline
     {
         src = 'https://github.com/akinsho/bufferline.nvim',

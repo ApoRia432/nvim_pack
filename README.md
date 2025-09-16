@@ -11,6 +11,12 @@
 go install golang.org/x/tools/gopls@latest
 ```
 
+### bashls
+
+```bash
+bun install -g bash-language-server
+```
+
 ### TypeScript
 
 ```bash
