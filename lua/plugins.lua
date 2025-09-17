@@ -1,9 +1,9 @@
 local plugins = {
 	-- blink.cmp
-	-- {
-	-- 	src = 'https://github.com/Saghen/blink.cmp',
-	-- },
-	-- 'https://github.com/rafamadriz/friendly-snippets',
+	{
+		src = 'https://github.com/Saghen/blink.cmp',
+	},
+	'https://github.com/rafamadriz/friendly-snippets',
     -- bufferline
     {
         src = 'https://github.com/akinsho/bufferline.nvim',
@@ -34,7 +34,7 @@ local plugins = {
 vim.pack.add(plugins)
 
 require("plugins.autopair")
--- require("plugins.blink")
+require("plugins.blink")
 require("plugins.bufferline")
 require("plugins.git")
 require("plugins.indent")
