@@ -2,9 +2,11 @@ vim.g.mapleader = ' '
 
 vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>x', vim.cmd.bd)
-vim.keymap.set('n', '<leader>t', ':vert belowright term<CR>')
+-- vim.keymap.set('n', '<leader>t', ':vert belowright term<CR>:vert resize 80<CR>')
+vim.keymap.set('n', '<leader>t', vim.cmd.terminal)
 
 vim.keymap.set({'n', 'v', 'x'}, '<leader>y', '"+y<CR>')
+vim.keymap.set('t', '<ESC>', '<C-\\><C-n>')
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
