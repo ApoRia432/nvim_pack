@@ -1,8 +1,8 @@
 local plugins = {
-	{
-		src = 'https://github.com/Saghen/blink.cmp',
-	},
-	'https://github.com/rafamadriz/friendly-snippets',
+	-- blink.cmp
+	-- {
+	-- 	src = 'https://github.com/Saghen/blink.cmp',
+	-- },
     {
         src = 'https://github.com/akinsho/bufferline.nvim',
     },
@@ -16,6 +16,9 @@ local plugins = {
     'https://github.com/neovim/nvim-lspconfig',
     --'https://github.com/mason-org/mason.nvim',
     -- 'https://github.com/windwp/nvim-autopairs',
+    -- autopair
+    -- 'https://github.com/windwp/nvim-autopairs',
+    -- indent
     'https://github.com/lukas-reineke/indent-blankline.nvim',
     'https://github.com/lewis6991/gitsigns.nvim',
     'https://github.com/folke/trouble.nvim',
@@ -24,10 +27,11 @@ local plugins = {
 vim.pack.add(plugins)
 
 -- require("plugins.autopair")
-require("plugins.blink")
+-- require("plugins.blink")
 require("plugins.bufferline")
 require("plugins.git")
 require("plugins.indent")
 require("plugins.telescope")
 require("plugins.treesitter")
 require("plugins.trouble")
+-- require("plugins.snippets")
