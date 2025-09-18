@@ -26,7 +26,6 @@ vim.lsp.config('lua_ls', {
 vim.lsp.enable('gopls')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('bashls')
--- vim.lsp.enable({ 'ts_ls', 'vue_ls' })
-vim.lsp.enable('emmet_ls')
+vim.lsp.enable({ 'ts_ls', 'vue_ls' })
 vim.lsp.enable('clangd')
 vim.lsp.enable('pyright')
