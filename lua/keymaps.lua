@@ -1,5 +1,7 @@
 vim.g.mapleader = ' '
 
+vim.keymap.set('n', '<leader>w', vim.cmd.write)
+vim.keymap.set('n', '<leader>q', vim.cmd.quit)
 vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>x', vim.cmd.bd)
 -- vim.keymap.set('n', '<leader>t', ':vert belowright term<CR>:vert resize 80<CR>')
