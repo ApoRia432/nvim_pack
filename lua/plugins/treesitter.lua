@@ -1,14 +1,23 @@
-require('nvim-treesitter.install').update({ with_sync = true })
-require('nvim-treesitter.configs').setup({
-    ensure_installed = { 'c', 'lua', 'go', 'typescript', 'javascript', 'yaml', 'json', 'toml', 'html', 'css', 'query'},
-    sync_install = false,
-    auto_install = true,
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-    }
-})
+local languages = {
+  'go',
+  'zig',
+  'lua',
+  'css',
+  'scss',
+  'javascript',
+  'typescript',
+  'javascriptreact',
+  'typescriptreact',
+  'vue',
+}
 
+require('nvim-treesitter').install(languages)
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = languages,
+  callback = function() vim.treesitter.start() end,
+})
+--
 -- vim.api.nvim_create_autocmd('PackChanged', {
 --     desc = 'handle treesitter updates',
 --     group = vim.api.nvim_create_augroup('nvim-treesitter-pack-changed-update', { clear = true}),
