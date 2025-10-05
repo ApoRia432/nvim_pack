@@ -10,6 +10,7 @@ require("vague").setup({
     style = {
         boolean = 'none',
         strings = 'none',
+        keyword_return = 'none',
         builtin_functions = 'bold',
     },
     colors = {

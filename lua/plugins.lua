@@ -9,12 +9,10 @@ local plugins = {
     { src = 'https://github.com/lewis6991/gitsigns.nvim' },
     { src = 'https://github.com/folke/trouble.nvim' },
     { src = 'https://github.com/rachartier/tiny-inline-diagnostic.nvim' },
-    -- 'https://github.com/akinsho/bufferline.nvim',
     { src = 'https://github.com/lukas-reineke/indent-blankline.nvim' },
 }
 
 vim.pack.add(plugins)
--- require("plugins.bufferline")
 require("plugins.indent")
 require("plugins.oil")
 require("plugins.git")
