@@ -5,4 +5,10 @@ vim.pack.add({
     'https://github.com/vague2k/vague.nvim'
 })
 
-vim.cmd.colorscheme('vague')
+require("vague").setup({
+    transparent = true,
+    colors = {
+        func = "#aeaed1",
+    }
+})
+vim.cmd("colorscheme vague")
