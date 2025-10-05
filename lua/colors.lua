@@ -7,6 +7,11 @@ vim.pack.add({
 
 require("vague").setup({
     transparent = true,
+    style = {
+        boolean = 'none',
+        strings = 'none',
+        builtin_functions = 'bold',
+    },
     colors = {
         func = "#aeaed1",
     }
