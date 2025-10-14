@@ -1,7 +1,7 @@
 require('options')
 require('keymaps')
+require('completion')
 require('plugins')
--- require('completion')
 require('lsp')
 require('colors')
 
