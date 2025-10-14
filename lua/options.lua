@@ -24,3 +24,9 @@ vim.opt.termguicolors = true
 vim.g.netrw_banner = 1
 vim.g.netrw_localcopydircmd = 'cp -r'
 vim.g.netrw_localmovedircmd = 'mv'
+
+vim.diagnostic.config({
+    virtual_text = {
+        current_line = true,
+    },
+})

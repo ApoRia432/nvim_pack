@@ -8,7 +8,6 @@ local plugins = {
     { src = 'https://github.com/nvim-mini/mini.pick' },
     { src = 'https://github.com/lewis6991/gitsigns.nvim' },
     { src = 'https://github.com/folke/trouble.nvim' },
-    { src = 'https://github.com/rachartier/tiny-inline-diagnostic.nvim' },
     -- { src = 'https://github.com/lukas-reineke/indent-blankline.nvim' },
 }
 
@@ -20,4 +19,3 @@ require("plugins.blink")
 require("plugins.pick")
 require("plugins.treesitter")
 require("plugins.trouble")
-require("plugins.diagnostic")
