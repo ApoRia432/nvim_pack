@@ -16,6 +16,10 @@
       "rev": "96ee37d",
       "src": "https://github.com/nvim-mini/mini.pick"
     },
+    "neovim": {
+      "rev": "72a04c4",
+      "src": "https://github.com/rose-pine/neovim"
+    },
     "nvim": {
       "rev": "af58927",
       "src": "https://github.com/catppuccin/nvim"

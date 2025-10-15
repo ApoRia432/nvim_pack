@@ -17,4 +17,10 @@ require("vague").setup({
         func = "#aeaed1",
     }
 })
+
+require("tokyonight").setup({
+    styles = {
+        keywords = { italic = false },
+    }
+})
 vim.cmd("colorscheme vague")
