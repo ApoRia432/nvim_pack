@@ -15,6 +15,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format);
+vim.keymap.set('n', 'ld', vim.lsp.buf.definition);
 
 vim.keymap.set('n', '<leader>su', vim.pack.update)
 vim.keymap.set('n', '<leader>cu',
