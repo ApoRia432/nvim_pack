@@ -1,8 +1,8 @@
 vim.pack.add({
   { src = 'https://github.com/neovim/nvim-lspconfig' },
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter', version = 'main' },
-  { src = 'https://github.com/nvim-lua/plenary.nvim' },
-  { src = 'https://github.com/nvim-telescope/telescope.nvim' },
+  { src = 'https://github.com/nvim-mini/mini.pick' },
+  { src = 'https://github.com/nvim-mini/mini.completion' },
   { src = 'https://github.com/lewis6991/gitsigns.nvim' },
   { src = 'https://github.com/folke/tokyonight.nvim' },
 });
@@ -15,13 +15,11 @@ require('tokyonight').setup({
 vim.cmd('colorscheme tokyonight-night');
 
 require('gitsigns').setup()
-
-require('telescope') .setup()
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>pf', builtin.find_files);
-vim.keymap.set('n', '<leader>ps', builtin.live_grep);
-vim.keymap.set('n', '<leader>pb', builtin.buffers);
-vim.keymap.set('n', '<leader>pt', builtin.diagnostics);
+require('mini.completion').setup()
+require('mini.pick').setup()
+vim.keymap.set('n', '<leader>pf', ':Pick files<CR>');
+vim.keymap.set('n', '<leader>ps', ':Pick grep_live<CR>');
+vim.keymap.set('n', '<leader>pb', ':Pick buffer<CR>');
 
 local languages = {
   'lua', 'go'

@@ -19,7 +19,7 @@ vim.opt.winborder = "single"
 vim.opt.termguicolors = true
 
 vim.diagnostic.config({
-  virtual_text = {
-    current_line = true
-  }
+    virtual_text = {
+        current_line = true
+    }
 })
