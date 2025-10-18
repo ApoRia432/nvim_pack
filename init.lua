@@ -1,7 +1,6 @@
 require("options")
 require("keymaps")
 require("plugins")
-require("lsp")
 
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(ev)
@@ -14,3 +13,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end,
 })
 vim.opt.completeopt = { "menu", "menuone", "noinsert" }
+
+vim.lsp.enable('gopls')
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('bashls')
+vim.lsp.enable('clangd')
+vim.lsp.enable('pyright')
+vim.lsp.enable('rust_analyzer')
