@@ -16,6 +16,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.scrolloff = 6
 
 vim.opt.winborder = "single"
+vim.opt.hlsearch = false
 vim.opt.termguicolors = true
 
 vim.diagnostic.config({
