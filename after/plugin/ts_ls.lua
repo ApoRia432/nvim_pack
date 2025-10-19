@@ -12,5 +12,3 @@ vim.lsp.config('ts_ls', {
     },
 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 })
-
-vim.lsp.enable('ts_ls')
