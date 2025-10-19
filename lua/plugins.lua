@@ -22,7 +22,7 @@ vim.keymap.set('n', '<leader>ps', ':Pick grep_live<CR>');
 vim.keymap.set('n', '<leader>pb', ':Pick buffer<CR>');
 
 local languages = {
-  'lua', 'go'
+  'lua', 'go', 'vue', 'html', 'scss', 'css', 'typescript', 'javascript', 'typescriptreact', 'javascriptreact'
 }
 require('nvim-treesitter').install(languages);
 vim.api.nvim_create_autocmd('FileType', {
