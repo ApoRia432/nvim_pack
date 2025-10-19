@@ -19,7 +19,7 @@ require('mini.completion').setup()
 require('mini.pick').setup()
 vim.keymap.set('n', '<leader>pf', ':Pick files<CR>');
 vim.keymap.set('n', '<leader>ps', ':Pick grep_live<CR>');
-vim.keymap.set('n', '<leader>pb', ':Pick buffer<CR>');
+vim.keymap.set('n', '<leader>pb', ':Pick buffers<CR>');
 
 local languages = {
   'lua', 'go', 'vue', 'html', 'scss', 'css', 'typescript', 'javascript', 'typescriptreact', 'javascriptreact'
