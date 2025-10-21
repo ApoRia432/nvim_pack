@@ -1,5 +1,6 @@
 require("options")
 require("keymaps")
+require("completion")
 require("plugins")
 
 vim.lsp.enable('gopls')
