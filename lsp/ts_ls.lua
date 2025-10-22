@@ -1,6 +1,5 @@
 local vue_language_server_path = os.getenv("BUN_INSTALL") .. "/install/global/node_modules/@vue/language-server/"
-
-vim.lsp.config('ts_ls', {
+return {
     init_options = {
         plugins = {
             {
@@ -11,4 +10,4 @@ vim.lsp.config('ts_ls', {
         },
     },
 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-})
+}

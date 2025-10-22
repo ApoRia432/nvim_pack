@@ -1,4 +1,4 @@
-local config = {
+return {
     settings = {
         Lua = {
             workspace = {
@@ -7,4 +7,3 @@ local config = {
         },
     },
 }
--- vim.lsp.config('lua_ls', config)
