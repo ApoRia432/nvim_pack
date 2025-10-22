@@ -70,7 +70,7 @@ vim.keymap.set('n', '<leader>q', vim.cmd.quit);
 vim.keymap.set('n', '<leader>x', vim.cmd.bd);
 vim.keymap.set('n', '<leader>t', vim.cmd.term);
 
-vim.keymap.set('n', 'ld', vim.lsp.buf.definition);
+vim.keymap.set('n', 'grd', vim.lsp.buf.definition);
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format);
 vim.keymap.set({'n', 'v', 'x'}, '<leader>y', '"+y<CR>')
 
