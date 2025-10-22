@@ -19,6 +19,7 @@ vim.diagnostic.config({
         current_line = true
     }
 })
+-- auto completion
 vim.opt.pumheight = 9
 vim.opt.complete = "o"
 vim.opt.autocomplete = true
@@ -53,7 +54,7 @@ require('tokyonight').setup({
         keywords = { italic = false },
     }
 })
-
+-- treesitter
 local languages = {
     'lua', 'go', 'vue', 'html', 'scss', 'css', 'typescript', 'javascript', 'typescriptreact', 'javascriptreact'
 }
@@ -63,6 +64,7 @@ vim.api.nvim_create_autocmd('FileType', {
     callback = function() vim.treesitter.start() end,
 })
 
+-- keymaps
 vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>e', vim.cmd.Oil);
 vim.keymap.set('n', '<leader>w', vim.cmd.write);
@@ -78,9 +80,11 @@ vim.keymap.set('n', '<leader>pf', ':Pick files<CR>');
 vim.keymap.set('n', '<leader>ps', ':Pick grep_live<CR>');
 vim.keymap.set('n', '<leader>pb', ':Pick buffers<CR>');
 
+-- lsp
 vim.lsp.enable('gopls')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('bashls')
 
+-- colorscheme
 vim.cmd('colorscheme tokyonight-night');
