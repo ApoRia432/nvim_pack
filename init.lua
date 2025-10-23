@@ -55,12 +55,10 @@ require('tokyonight').setup({
     }
 })
 -- treesitter
-local languages = {
-    'lua', 'go', 'vue', 'html', 'scss', 'css', 'typescript', 'javascript', 'typescriptreact', 'javascriptreact'
-}
-require('nvim-treesitter').install(languages);
+require('nvim-treesitter').install('lua', 'go', 'vue', 'html', 'scss', 'css', 'typescript', 'javascript',
+    'typescriptreact', 'javascriptreact');
 vim.api.nvim_create_autocmd('FileType', {
-    pattern = languages,
+    pattern = { 'lua', 'go', 'vue', 'html', 'scss', 'css', 'typescript', 'javascript', 'tsx', 'jsx' },
     callback = function() vim.treesitter.start() end,
 })
 
@@ -74,7 +72,7 @@ vim.keymap.set('n', '<leader>t', vim.cmd.term);
 
 vim.keymap.set('n', 'grd', vim.lsp.buf.definition);
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format);
-vim.keymap.set({'n', 'v', 'x'}, '<leader>y', '"+y<CR>')
+vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 
 vim.keymap.set('n', '<leader>pf', ':Pick files<CR>');
 vim.keymap.set('n', '<leader>ps', ':Pick grep_live<CR>');
