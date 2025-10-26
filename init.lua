@@ -45,6 +45,9 @@ vim.pack.add({
 require('gitsigns').setup()
 require('mini.pick').setup()
 require('oil').setup({
+    view_options = {
+        show_hidden = true,
+    },
     win_options = {
         winbar = "%#@attribute.builtin#%{substitute(v:lua.require('oil').get_current_dir(), '^' . $HOME, '~', '')}",
     },
