@@ -80,13 +80,12 @@ vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 vim.keymap.set('n', '<leader>pf', ':Pick files<CR>');
 vim.keymap.set('n', '<leader>ps', ':Pick grep_live<CR>');
 vim.keymap.set('n', '<leader>pb', ':Pick buffers<CR>');
-
--- lsp
+--lsp
 vim.lsp.enable('gopls')
-vim.lsp.enable('lua_ls')
 vim.lsp.enable('ts_ls')
+vim.lsp.enable('lua_ls')
 vim.lsp.enable('bashls')
 vim.lsp.enable('yamlls')
-
+vim.lsp.enable('emmet_ls')
 -- colorscheme
 vim.cmd('colorscheme tokyonight-night');
