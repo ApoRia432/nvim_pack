@@ -75,9 +75,9 @@ vim.keymap.set('n', 'grd', vim.lsp.buf.definition);
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format);
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', '"+y<CR>')
 
-vim.keymap.set('n', '<leader>pf', ':Pick files<CR>');
-vim.keymap.set('n', '<leader>ps', ':Pick grep_live<CR>');
-vim.keymap.set('n', '<leader>pb', ':Pick buffers<CR>');
+vim.keymap.set('n', '<leader>f', ':Pick files<CR>');
+vim.keymap.set('n', '<leader>s', ':Pick grep_live<CR>');
+vim.keymap.set('n', '<leader>b', ':Pick buffers<CR>');
 --lsp
 vim.lsp.enable('gopls')
 vim.lsp.enable('ts_ls')
