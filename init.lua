@@ -39,7 +39,7 @@ vim.pack.add({
     { src = 'https://github.com/nvim-mini/mini.pick' },
     { src = 'https://github.com/stevearc/oil.nvim' },
     { src = 'https://github.com/lewis6991/gitsigns.nvim' },
-    { src = 'https://github.com/folke/tokyonight.nvim' },
+    { src = 'https://github.com/catppuccin/nvim' },
 });
 
 require('gitsigns').setup()
@@ -52,10 +52,8 @@ require('oil').setup({
         winbar = "%#@attribute.builtin#%{substitute(v:lua.require('oil').get_current_dir(), '^' . $HOME, '~', '')}",
     },
 })
-require('tokyonight').setup({
-    styles = {
-        keywords = { italic = false },
-    }
+require("catppuccin").setup({
+    transparent_background = true,
 })
 -- treesitter
 require('nvim-treesitter').install('lua', 'go', 'vue', 'html', 'scss', 'css', 'typescript', 'javascript',
@@ -88,4 +86,4 @@ vim.lsp.enable('bashls')
 vim.lsp.enable('yamlls')
 vim.lsp.enable('emmet_ls')
 -- colorscheme
-vim.cmd('colorscheme tokyonight-night');
+vim.cmd('colorscheme catppuccin-latte');
